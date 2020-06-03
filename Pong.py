@@ -110,12 +110,14 @@ while True:
     if ball.ycor() >= 290:
         ball.sety(290)
         ball.dy *= -1
-        winsound.PlaySound("bounce.mp3", winsound.SND_ASYNC)
+        winsound.PlaySound(
+            "zapsplat_sport_afl_australia_football_catch_hands_001.mp3", winsound.SND_ASYNC)
 
     if ball.ycor() <= -290:
         ball.sety(-290)
         ball.dy *= -1
-        winsound.PlaySound("bounce.mp3", winsound.SND_ASYNC)
+        winsound.PlaySound(
+            "zapsplat_sport_afl_australia_football_catch_hands_001.mp3", winsound.SND_ASYNC)
 
     if ball.xcor() <= -390:
         ball.goto(0, 0)
@@ -138,9 +140,11 @@ while True:
     if(ball.xcor() > 340 and ball.xcor() < 350) and ball.ycor() < (paddleB.ycor() + 40) and ball.ycor() > (paddleB.ycor() - 50):
         ball.setx(340)
         ball.dx *= -1
-        winsound.PlaySound("bounce.mp3", winsound.SND_ASYNC)
+        winsound.PlaySound(
+            "zapsplat_sport_afl_australia_football_catch_hands_001.mp3", winsound.SND_ASYNC)
 
     if(ball.xcor() < -340 and ball.xcor() > -350) and ball.ycor() < (paddleA.ycor() + 40) and ball.ycor() > (paddleA.ycor() - 50):
         ball.setx(-340)
         ball.dx *= -1
-        winsound.PlaySound("bounce.mp3", winsound.SND_ASYNC)
+        winsound.PlaySound(
+            "zapsplat_sport_afl_australia_football_catch_hands_001.mp3", winsound.SND_ASYNC)
